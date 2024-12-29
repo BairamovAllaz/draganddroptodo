@@ -1,0 +1,38 @@
+.Div { 
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainDiv { 
+    max-width: 500px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.MainDiv2 {
+    min-width: 500px;
+    height: 70px;
+position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.MainDiv2 p {
+    width: 150px;
+    margin-left: 30px;
+    cursor: grab;
+}
+
+.MainDiv2.dragging {
+    background-color: #d9edf7;
+    transform: scale(1.05);
+    cursor: grabbing;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 9999;
+}
+.MainDiv2.drag-over {
+    border-color: #007bff;
+    background-color: #e9f7fe;transform: scale(1.05);
+}
